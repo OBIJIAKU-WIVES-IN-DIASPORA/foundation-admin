@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root { --background: #f4f2e8; --foreground: #17261c; }
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-50: #ebefe3;
+  --color-brand-100: #d6e2cf;
+  --color-brand-500: #3f8a5a;
+  --color-brand-700: #2f6b45;
+  --color-brand-900: #1f4a31;
+  --color-brand-950: #13301f;
+  --color-gold: #f5b83d;
+  --font-sans: var(--font-inter);
+}
+
+body { background: var(--background); color: var(--foreground); font-family: var(--font-inter), system-ui, sans-serif; }
+:focus-visible { outline: 3px solid var(--color-brand-500); outline-offset: 2px; }
+a[href], button:not(:disabled), select, summary, label[for] { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+h1 { font-size: 1.75rem; line-height: 1.15; letter-spacing: -0.02em; font-weight: 500; }
+h2 { font-size: 1.25rem; line-height: 1.3; letter-spacing: -0.01em; font-weight: 500; }
